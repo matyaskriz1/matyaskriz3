@@ -84,7 +84,7 @@
       if (px === null) return apply(s, 0);
       const r = s.getBoundingClientRect();
       const d = Math.hypot(px - (r.left + r.width / 2), py - (r.top + r.height / 2));
-      apply(s, Math.max(0, 1 - d / Math.max(160, r.width * 2.2)) ** 1.5);
+      apply(s, Math.max(0, 1 - d / Math.max(220, r.width * 2.6)) ** 1.5);
     });
   }
   const kick = () => { if (!raf) raf = requestAnimationFrame(frame); };
@@ -202,7 +202,6 @@
     post.dataset.net = net;
     $("#netName").textContent = limits[net][1];
     const n = postText.value.length;
-    const rec = net === "ig" ? 125 : net === "in" ? 210 : 80;
     const c = $("#count");
     c.textContent = `${n} znaků. Na ${limits[net][1]} se hodí ${hints[net]}.`;
     c.classList.toggle("warn", n > 300);

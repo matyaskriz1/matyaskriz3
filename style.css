@@ -73,7 +73,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); }
 .hero { padding: clamp(40px, 9vw, 110px) 0 clamp(48px, 7vw, 90px); }
 .hello { font-weight: 500; color: var(--muted); margin-bottom: 10px; font-size: 1.15rem; }
 #name {
-  font-size: clamp(3.2rem, 14.5vw, 12.5rem);
+  font-size: clamp(3.2rem, 17vw, 15rem);
   font-variation-settings: "wght" 780, "wdth" 78;
   line-height: .95; letter-spacing: -0.015em;
   user-select: none; touch-action: pan-y;
@@ -147,7 +147,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); }
 .field textarea { resize: vertical; }
 .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
 input[type=range] { accent-color: var(--accent); width: 100%; }
-output { color: var(--accent); font-weight: 700; }
+output { color: var(--accent); font-weight: 700; display: inline; }
+.field output { margin-left: 4px; }
 
 /* Ukázkový web */
 .frame { background: #fff; color: #1b1b1b; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); width: var(--fw, 100%); max-width: 100%; margin: 0 auto; transition: width .35s cubic-bezier(.3, .8, .3, 1); container-type: inline-size; box-shadow: 0 20px 40px -24px rgba(0, 0, 0, .35); }
